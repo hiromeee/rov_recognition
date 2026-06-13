@@ -1,0 +1,19 @@
+# Blue Robotics Low-Light HD USB Camera (CAM-USB-LOW-LIGHT-R1)
+# FOV: H=80deg / V=64deg, レンズ歪み仕様: 1%
+# fx: (640/2) / tan(80/2 * pi/180) = 381.4 px
+# fy: (480/2) / tan(64/2 * pi/180) = 384.1 px  ← estimate_focal_length.py の実測値と一致
+# k1: 1% 歪み相当の概算値（チェスボード実測で精緻化推奨）
+camera_matrix:
+  cx: 320.0
+  cy: 240.0
+  fx: 381.4
+  fy: 384.1
+dist_coeffs:
+  k1: -0.01
+  k2: 0.0
+  k3: 0.0
+  p1: 0.0
+  p2: 0.0
+image_size:
+  height: 480
+  width: 640

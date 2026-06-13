@@ -1,0 +1,40 @@
+# Local editor / AI-assistant settings
+.claude/settings.local.json
+
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+*.egg-info/
+
+# Locally generated annotated videos
+annotated*.mp4
+
+# Experiment annotations (generated)
+docs/experiments/*/results/annotated/
+docs/experiments/*/annotated/
+
+# Experiment / archive documents
+docs/experiments/
+docs/archive/
+
+# Production-environment footage (kept locally only)
+videos_production_environment/
+
+# Recorded rosbags (kept locally only)
+rosbag2/
+
+# External ROS2 interface package (vendored from the team's robot repo)
+ros2_ws/src/nedo_rov_interfaces/
+
+# ROS2 build artifacts
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# __pycache__ (including inside ros2_ws)
+ros2_ws/**/__pycache__/
+
+# Demo assets are force-added explicitly; ignore other large media
+docs/assets/*.mp4

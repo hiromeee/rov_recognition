@@ -1,0 +1,24 @@
+# カメラキャリブレーションパラメータ
+# scripts/estimate_focal_length.py で生成・更新する
+#
+# camera_matrix: 内部行列 [[fx, 0, cx], [0, fy, cy], [0, 0, 1]]
+# dist_coeffs:   歪み係数 [k1, k2, p1, p2, k3]
+#   k1, k2, k3 = 放射歪み係数
+#   p1, p2     = 接線歪み係数
+
+camera_matrix:
+  fx: 600.0   # 水平焦点距離 [px]（要推定）
+  fy: 600.0   # 垂直焦点距離 [px]（要推定）
+  cx: 320.0   # 主点 x（通常 width/2）
+  cy: 240.0   # 主点 y（通常 height/2）
+
+dist_coeffs:
+  k1: 0.0
+  k2: 0.0
+  p1: 0.0
+  p2: 0.0
+  k3: 0.0
+
+image_size:
+  width: 640
+  height: 480

@@ -1,0 +1,31 @@
+source:
+  kind: camera
+  width: 640
+  height: 480
+  fps: 30
+  frames_limit: 900
+  camera_index: 0
+
+hsv:
+  lower: [40, 80, 80]
+  upper: [85, 255, 255]
+  morphology_kernel: 5
+  min_contour_area: 150
+  min_diameter_px: 10  # 小さすぎるマーカーを除外（要調整）
+
+runtime:
+  display: true
+  log_interval_frames: 30
+  aggregation_strategy: "nearest_center"  # options: "nearest_center", "average", "leftmost", "rightmost", "largest"
+  outlier_sigma: 3.0  # 深度外れ値除去（MADベース, 0で無効）
+  outlier_min_samples: 3
+
+camera:
+  fov_x_deg: 80.0  # Blue Robotics CAM-USB-LOW-LIGHT-R1 公式仕様値
+  fov_y_deg: 64.0  # Blue Robotics CAM-USB-LOW-LIGHT-R1 公式仕様値
+  altitude_m: 1.5  # フォールバック用（未使用なら任意値）
+  pitch_deg: 0.0   # ピッチ角（前後方向の傾き）
+  roll_deg: 0.0    # ロール角（左右方向の傾き）
+  marker_diameter_m: 0.07  # マーカー直径（7cm）
+  marker_spacing_m: 0.5  # マーカー間隔（50cm）
+  # calibration_file: configs/camera_calibration.yaml  # 歪み補正（estimate_focal_length.py で生成後に有効化）

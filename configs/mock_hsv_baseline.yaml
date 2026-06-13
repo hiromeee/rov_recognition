@@ -1,0 +1,16 @@
+source:
+  kind: mock
+  width: 640
+  height: 480
+  fps: 30
+  frames_limit: 300
+
+hsv:
+  lower: [40, 80, 80]
+  upper: [85, 255, 255]
+  morphology_kernel: 5
+  min_contour_area: 150
+
+runtime:
+  display: false
+  log_interval_frames: 30
