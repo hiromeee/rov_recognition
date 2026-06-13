@@ -27,6 +27,26 @@ and as a standalone CLI for offline development and evaluation.
 
 ---
 
+## My role
+
+I was the **sole designer and implementer of the vision/recognition module** —
+this repository — as part of a university marine-robotics team's competition
+entry. Everything here is my own work:
+
+- the ROS-independent recognition pipeline: HSV + contour detection, the
+  pinhole pixel→metre geometry, the IMU pitch/roll attitude fusion, MAD outlier
+  rejection, and target aggregation;
+- the ROS 2 node wrapping it (camera + IMU subscriptions, threaded executor,
+  zero-crossing publish logic) and the offline CLI;
+- the deterministic test suite, the YAML config system, and the on-site HSV
+  tuning tool.
+
+Owned by **other team members** (and consumed by this repo as dependencies, not
+included here): the ROV hardware and low-level control, the camera/IMU drivers,
+and the shared `*_rov_interfaces` ROS 2 message definitions.
+
+---
+
 ## What this project demonstrates
 
 - **Classical CV under hard conditions.** Underwater scenes lose saturation and
