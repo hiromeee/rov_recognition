@@ -3,9 +3,8 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![ROS 2](https://img.shields.io/badge/ROS%202-Jazzy-22314E?logo=ros&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-CV%20pipeline-5C3EE8?logo=opencv&logoColor=white)
-![Tests](https://img.shields.io/badge/tests-21%20passing-brightgreen)
-![Type checked](https://img.shields.io/badge/pyright-0%20errors-brightgreen)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![CI](https://github.com/hiromeee/rov_recognition/actions/workflows/ci.yml/badge.svg)](https://github.com/hiromeee/rov_recognition/actions/workflows/ci.yml)
 
 Real-time computer-vision module that guides an underwater remotely-operated
 vehicle (ROV) along a marked pipeline, built for the
@@ -201,6 +200,9 @@ with 19 markers at 0.5 m spacing; the ROV scores on how few markers it loses and
 how small its average vertical deviation is over a timed run.
 
 Official competition site: <https://blue-economy-challenge.nedo.go.jp/>
+
+Development took place in my organisation's private repository; this repository
+is a restructured, public-facing version of that work.
 
 ## License
 
